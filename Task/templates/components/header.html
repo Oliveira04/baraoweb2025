@@ -1,23 +1,19 @@
-<div class="navbar bg-base-100 shadow-sm ">
-  <div class="flex-1">
+<div class="navbar bg-base-100 shadow-sm">
+  
+  <div class="navbar-start">
     <a href="{% url 'home' %}" class="btn btn-ghost text-xl">RouTask</a>
-  </div>
-  <div class="flex-none">
     <ul class="menu menu-horizontal px-1">
-      <li><a href="{% url 'home' %}"><i class="bi bi-house"></i> Principal</a></li>
-      <li><a href="{% url 'sobre' %}"><i class="bi bi-info-circle"></i> Sobre</a></li>
+      <li><a href="{% url 'home' %}">Projetos</a></li>
+      <li><a href="{% url 'home' %}">Planos</a></li>
+      <li><a href="{% url 'home' %}">Recentes</a></li>
+    </ul>
+  </div>
+
+  <div class="navbar-end">
+    <ul class="menu menu-horizontal">
+      <li><a href="{% url 'home' %}" class= "btn bg-blue-500 text-white hover:bg-blue-700 "> Compartilhar</a></li>
+      <li><a href="{% url 'home' %}" class="badge bg-pink-500 rounded-full w-8 h-8 text-white ml-4 hover:bg-pink-700">L</a></li>
+      
     </ul>
   </div>
 </div>
-<div>
-
-  <div class="navbar bg-base-100 shadow-sm flex flex-col items-start p-4">
-    <div class="mb-4">
-      <div class="flex-none w-full">
-        <ul class="menu menu-vertical w-full">
-          <li><a href="{% url 'home' %}"><i class="bi bi-house"></i> Principal</a></li>
-          <li><a href="{% url 'sobre' %}"><i class="bi bi-info-circle"></i> Sobre</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>

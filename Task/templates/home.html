@@ -4,20 +4,60 @@
 {% block title %}RouTask{% endblock %}
 
 {% block content %}
-<div class="hero min-h-screen" style="background-color: white;">
-  <div class=""></div>
-  <div class="">
-    <div class="max-w-md">
-      <h1 class="mb-5 text-5xl font-bold">RouTask</h1>
-      <p class="mb-5">Este é um projeto starter em Django do curso de Ciência da Computação - Barão de Mauá</p>
-      <div class="mt-6">
-        <ul class="list-inside text-white">
-          <li>Django</li>
-          <li>Tailwind CSS</li>
-          <li>DaisyUI</li>
-          <li>Bootstrap Icons</li>
-        </ul>
-      </div>
+<div class="container mx-auto mt-8 ">
+  <div class="flex justify-between items-center mb-9 bg-gray-100">
+    <h1 class="text-2xl font-bold ">Seus Projetos Favoritos</h1>
+    <div class="flex items-center">
+      <a href="{% url 'home' %}"><span class="badge bg-pink-500 rounded-full w-8 h-8 text-white">L</span></a>
+      <a href="{% url 'home' %}"><span class="badge bg-red-500 rounded-full w-8 h-8 text-white">LK</span></a>
+      <a href="{% url 'home' %}"><i class="bi bi-person-circle text-2xl"></i></a>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-2 gap-4 mb-8 cursor-pointer">
+    <div class="relative p-4 bg-gray-200 rounded shadow">
+      <h2 class="text-lg font-semibold cursor-pointer ">PROJETO 01
+        <span class="absolute top-2 right-2 text-yellow-500 justify-end">★</span>
+      </h2>
+      
+      
+    </div>
+    <div class="relative p-4 bg-gray-200 rounded shadow ">
+      <h2 class=" text-lg font-semibold cursor-pointer">PROJETO 03
+        <span class="absolute top-2 right-2 text-yellow-500 justify-end">★</span>
+      </h2>
+      
+    </div>
+  </div>
+
+  <div class="flex justify-start items-center mb-4  ">
+    <h1 class="text-2xl font-bold">Seus Projetos</h1>
+    <button class="btn bg-white text-black border border-gray-300 hover:bg-gray-300 ml-4">Novo Projeto
+      <i class="ml-1 font-bold"> +</i>
+    </button>
+  </div>
+  
+  <div class=" grid grid-cols-3 gap-4">
+    <div class="relative p-4 bg-gray-200 rounded shadow cursor-pointer">
+      <h2 class="text-lg font-semibold cursor-pointer">PROJETO 01
+        <span class="absolute top-2 right-2 text-yellow-500 justify-end">★</span>
+      </h2>
+      
+    </div>
+    <div class="p-4 bg-gray-200 rounded shadow cursor-pointer">
+      <h2 class="text-lg font-semibold cursor-pointer">PROJETO 02</h2>
+    </div>
+    <div class="relative p-4 bg-gray-200 rounded shadow cursor-pointer">
+      <h2 class="text-lg font-semibold cursor-pointer">PROJETO 03
+        <span class="absolute top-2 right-2 text-yellow-500 justify-end">★</span>
+      </h2>
+      
+    </div>
+    <div class="p-4 bg-gray-200 rounded shadow cursor-pointer">
+      <h2 class="text-lg font-semibold cursor-pointer">PROJETO 04</h2>
+    </div>
+    <div class="p-4 bg-gray-200 rounded shadow cursor-pointer">
+      <h2 class="text-lg font-semibold cursor-pointer">PROJETO 05</h2>
     </div>
   </div>
 </div>
